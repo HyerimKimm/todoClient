@@ -11,8 +11,8 @@ export default {
 
 const Template = () => <InputTodo />
 
-export const TopBarTemplate = Template.bind({});
+export const InputTodoTemplate = Template.bind({});
 
-// TopBarTemplate.args = {
+// InputTodoTemplate.args = {
 //     title: "페이지 제목",
 // }

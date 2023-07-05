@@ -7,7 +7,7 @@ import { maxWidth } from '../styles/variables';
 export const HeaderContainer = styled.header`
     box-sizing: border-box;
     position: fixed;
-    top:20px;
+    top:30px;
     display: flex;
     flex-direction: row;
     align-items: center;

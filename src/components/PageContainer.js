@@ -6,6 +6,7 @@ export const fadeInAnimation = keyframes`
     to { opacity: 1; }
 `
 export const PageContainer = styled.div`
+    position: relative;
     box-sizing: border-box;
     background-color: ${(props)=>props.color.background};
     border-style: solid;
@@ -22,7 +23,7 @@ export const PageContainer = styled.div`
 export const MainContainer = styled.main`
     box-sizing: border-box;
     position: fixed;
-    top: 80px;
+    top: 90px;
     width: ${maxWidth};
     height: 620px;
     display: flex;
@@ -30,3 +31,12 @@ export const MainContainer = styled.main`
     justify-content: start;
     align-items: center;
 `;
+export const ListContainer = styled.ul`
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: ${maxWidth};
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+`
