@@ -1,13 +1,15 @@
 import React from 'react';
-import { mainColor } from '../styles/variables';
-import styled from 'styled-components';
+import { borderColor, mainColor } from '../styles/variables';
 import { PageContainer } from '../components/PageContainer';
+import { LoadingLogo } from '../components/LoadingLogo';
 
-const LoadingLogoContainer = styled.section``
 const LoadingPage = () => {
-    console.log(mainColor)
+    const color = { background:mainColor, border:borderColor };
+
     return (
-       <PageContainer color={mainColor}></PageContainer>
+       <PageContainer color={color}>
+            <LoadingLogo/>
+       </PageContainer>
     );
 };
 

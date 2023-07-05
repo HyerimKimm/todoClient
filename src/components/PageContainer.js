@@ -1,13 +1,32 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { maxWidth } from '../styles/variables';
 
-export const PageContainer = styled.main`
+export const fadeInAnimation = keyframes`
+    from { opacity: 0; }
+    to { opacity: 1; }
+`
+export const PageContainer = styled.div`
     box-sizing: border-box;
-    background-color: ${(props)=>props.color};
-    width: 360px;
+    background-color: ${(props)=>props.color.background};
+    border-style: solid;
+    border-color: ${(props)=>props.color.border};
+    width: ${maxWidth};
     height: 700px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: ${fadeInAnimation} 300ms;
 `
+export const MainContainer = styled.main`
+    box-sizing: border-box;
+    position: fixed;
+    top: 80px;
+    width: ${maxWidth};
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+`;
